@@ -6,25 +6,25 @@ export default {
     {
       name: 'caption',
       title: 'Caption',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'video',
       title: 'Video',
       type: 'file',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     },
     {
       name: 'userId',
       title: 'UserId',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'postedBy',
       title: 'PostedBy',
-      type: 'postedBy',
+      type: 'postedBy'
     },
     {
       name: 'likes',
@@ -33,20 +33,20 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{ type: 'user' }],
-        },
-      ],
+          to: [{ type: 'user' }]
+        }
+      ]
     },
     {
       name: 'comments',
       title: 'Comments',
       type: 'array',
-      of: [{ type: 'comment' }],
+      of: [{ type: 'comment' }]
     },
     {
       name: 'topic',
       title: 'Topic',
-      type: 'string',
-    },
-  ],
-};
+      type: 'string'
+    }
+  ]
+}
